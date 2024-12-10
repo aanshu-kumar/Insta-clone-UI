@@ -9,12 +9,13 @@
 }
 .sidebar {
   width: 20%;
+  min-width: 180px;
   height: 100vh;
   background: rgba(255, 255, 255, 1);
   border-right: 1px solid lightgray;
 }
 .main-content {
-  margin-left: 100px;
+  margin-left: 10%;
   width: 80%;
   height: 100vh;
   overflow: hidden;
@@ -189,4 +190,23 @@ footer {
 }
 strong {
   padding-right: 5px;
+}
+
+@media screen and (max-width:1102px){
+  footer{
+    display: none;
+  }
+  .main-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    width: 100%;
+  }
+  .post {
+    width: 80%;
+    height: 100vh;
+  }
 }
